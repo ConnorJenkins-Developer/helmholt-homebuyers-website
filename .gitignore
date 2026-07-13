@@ -12,3 +12,4 @@ preview.html
 # Temp
 _deploy.json
 .vercel/
+dist/
