@@ -315,7 +315,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink); line-heigh
 /* ---------- Page hero (interior) ---------- */
 .page-hero { background: var(--navy-800); color: #eaf0fb; position: relative; overflow: hidden; }
 .page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(900px 400px at 85% -20%, rgba(74,95,165,.5), transparent 60%), radial-gradient(600px 300px at 5% 120%, rgba(232,121,30,.14), transparent 60%); }
-.page-hero .container { position: relative; z-index: 2; padding: 66px 0; }
+.page-hero .container { position: relative; z-index: 2; padding: 66px 24px; }
 .page-hero h1 { color: #fff; font-size: clamp(2.1rem, 4.4vw, 3.2rem); margin: 16px 0 14px; max-width: 760px; }
 .page-hero p { color: #c3cde3; font-size: 1.12rem; max-width: 620px; }
 .crumbs { display: flex; align-items: center; gap: 8px; font-size: .86rem; color: var(--blue-300); font-family: var(--font-display); }
