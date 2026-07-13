@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Helmholt HomeBuyers Inc. buys houses fast for cash across the St. Louis metro — no repairs, no fees, close in as few as 5 days. Get your free, no-obligation offer today.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2056%2064'%3E%3Crect%20width='56'%20height='64'%20rx='12'%20fill='%231d2b52'/%3E%3Cpath%20d='M8%2030%20L28%2012%20L48%2030%20L48%2034%20L44%2034%20L44%2054%20L12%2054%20L12%2034%20L8%2034%20Z'%20fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+<title>Helmholt HomeBuyers Inc. — Sell Your House Fast in St. Louis</title>
+<style>
+/* ==========================================================================
+   Helmholt HomeBuyers Inc. — Design System
+   Palette derived from the company logo (deep navy + warm orange).
+   ========================================================================== */
+
+:root {
+  /* Brand */
+  --navy-900: #16213f;
+  --navy-800: #1d2b52;
+  --navy-700: #263766;
+  --navy-600: #324680;
+  --blue-500: #4a5fa5;
+  --blue-300: #8fa0d6;
+  --orange-600: #cf6712;
+  --orange-500: #e8791e;
+  --orange-400: #f28f3b;
+  --orange-100: #fdeede;
+
+  /* Neutrals */
+  --ink: #16203a;
+  --body: #3b465c;
+  --muted: #6b7689;
+  --line: #e3e9f2;
+  --line-strong: #cdd6e5;
+  --surface: #ffffff;
+  --surface-2: #f5f8fc;
+  --surface-3: #eef3fa;
+
+  /* System */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --shadow-sm: 0 1px 2px rgba(22, 33, 63, .06), 0 2px 8px rgba(22, 33, 63, .05);
+  --shadow: 0 10px 30px -12px rgba(22, 33, 63, .22);
+  --shadow-lg: 0 30px 60px -20px rgba(22, 33, 63, .35);
+  --ring: 0 0 0 4px rgba(232, 121, 30, .28);
+
+  --container: 1180px;
+  --header-h: 78px;
+
+  --font-display: "Sora", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 20px); }
+body {
+  font-family: var(--font-body);
+  color: var(--body);
+  background: var(--surface);
+  line-height: 1.65;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+img, svg, video { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea, select { font: inherit; color: inherit; }
+ul { list-style: none; padding: 0; }
+h1, h2, h3, h4 { font-family: var(--font-display); color: var(--ink); line-height: 1.12; font-weight: 700; letter-spacing: -.02em; }
+
+/* ---------- Layout ---------- */
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: 24px; }
+.section { padding: 96px 0; }
+.section--tight { padding: 68px 0; }
+.section--alt { background: var(--surface-2); }
+.section--navy { background: var(--navy-800); color: #dfe6f4; }
+.section--navy h2, .section--navy h3 { color: #fff; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-display);
+  font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--orange-600);
+}
+.eyebrow::before { content: ""; width: 22px; height: 2px; border-radius: 2px; background: var(--orange-500); }
+.section--navy .eyebrow { color: var(--orange-400); }
+
+.section-head { max-width: 640px; margin-bottom: 52px; }
+.section-head.center { margin-inline: auto; text-align: center; }
+.section-head.center .eyebrow::before { display: none; }
+.section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.9rem); margin: 14px 0 16px; }
+.section-head p { font-size: 1.075rem; color: var(--muted); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: var(--font-display); font-weight: 600; font-size: .98rem;
+  padding: 15px 26px; border-radius: 999px;
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease), background .2s var(--ease), color .2s var(--ease);
+  white-space: nowrap; line-height: 1;
+}
+.btn svg { width: 18px; height: 18px; }
+.btn--primary { background: var(--orange-500); color: #fff; box-shadow: 0 12px 24px -10px rgba(232, 121, 30, .7); }
+.btn--primary:hover { background: var(--orange-600); transform: translateY(-2px); box-shadow: 0 18px 30px -12px rgba(232, 121, 30, .8); }
+.btn--dark { background: var(--navy-800); color: #fff; }
+.btn--dark:hover { background: var(--navy-700); transform: translateY(-2px); }
+.btn--ghost { background: rgba(255,255,255,.08); color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.3); }
+.btn--ghost:hover { background: rgba(255,255,255,.16); transform: translateY(-2px); }
+.btn--outline { background: #fff; color: var(--navy-800); box-shadow: inset 0 0 0 1.5px var(--line-strong); }
+.btn--outline:hover { box-shadow: inset 0 0 0 1.5px var(--navy-600); transform: translateY(-2px); }
+.btn--lg { padding: 18px 34px; font-size: 1.05rem; }
+.btn--block { width: 100%; }
+
+.textlink { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-display); font-weight: 600; color: var(--navy-700); }
+.textlink svg { width: 17px; height: 17px; transition: transform .2s var(--ease); }
+.textlink:hover { color: var(--orange-600); }
+.textlink:hover svg { transform: translateX(4px); }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  height: var(--header-h);
+  background: rgba(255, 255, 255, .82);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .25s, box-shadow .25s, background .25s;
+}
+.site-header.scrolled { border-color: var(--line); box-shadow: var(--shadow-sm); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 100%; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.brand .logo { height: 42px; width: auto; }
+
+.nav { display: flex; align-items: center; gap: 4px; }
+.nav a {
+  font-family: var(--font-display); font-weight: 500; font-size: .95rem; color: var(--body);
+  padding: 9px 14px; border-radius: 10px; transition: color .18s, background .18s;
+}
+.nav a:hover { color: var(--navy-800); background: var(--surface-3); }
+.nav a.active { color: var(--navy-800); font-weight: 600; }
+
+.header-cta { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.header-phone { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 600; color: var(--navy-800); font-size: .95rem; }
+.header-phone svg { width: 17px; height: 17px; color: var(--orange-500); }
+
+.nav-toggle { display: none; width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line); background: #fff; align-items: center; justify-content: center; }
+.nav-toggle svg { width: 22px; height: 22px; color: var(--navy-800); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; background: var(--navy-900); color: #eef2fb; }
+.hero-bg { position: absolute; inset: 0; z-index: 0; }
+.hero-bg::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    radial-gradient(1100px 520px at 78% -8%, rgba(74, 95, 165, .55), transparent 60%),
+    radial-gradient(900px 500px at 8% 0%, rgba(232, 121, 30, .16), transparent 55%),
+    linear-gradient(180deg, var(--navy-900) 0%, var(--navy-800) 55%, var(--navy-900) 100%);
+}
+.hero-skyline { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: auto; opacity: .5; z-index: 1; }
+.hero .container { position: relative; z-index: 2; }
+.hero-grid {
+  display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: center;
+  padding: 88px 0 108px;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 9px;
+  background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.16);
+  padding: 8px 15px; border-radius: 999px; font-size: .82rem; font-weight: 600;
+  font-family: var(--font-display); letter-spacing: .02em; color: #dfe6f7;
+}
+.hero-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #46d18a; box-shadow: 0 0 0 4px rgba(70,209,138,.25); }
+.hero h1 { color: #fff; font-size: clamp(2.35rem, 5vw, 4rem); margin: 22px 0 20px; }
+.hero h1 .accent { color: var(--orange-400); }
+.hero-sub { font-size: 1.2rem; color: #c3cde3; max-width: 560px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+.hero-trust { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 40px; }
+.hero-trust .item { display: flex; align-items: center; gap: 10px; font-size: .95rem; color: #c3cde3; }
+.hero-trust svg { width: 20px; height: 20px; color: var(--orange-400); flex-shrink: 0; }
+
+/* Hero offer card */
+.offer-card {
+  background: #fff; color: var(--ink); border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg); padding: 30px; position: relative;
+}
+.offer-card h3 { font-size: 1.35rem; }
+.offer-card .lead { color: var(--muted); font-size: .96rem; margin-top: 6px; }
+.offer-tag {
+  position: absolute; top: -15px; right: 26px;
+  background: var(--orange-500); color: #fff; font-family: var(--font-display); font-weight: 600;
+  font-size: .8rem; padding: 7px 15px; border-radius: 999px; box-shadow: var(--shadow);
+}
+.field { margin-top: 15px; }
+.field label { display: block; font-size: .82rem; font-weight: 600; font-family: var(--font-display); color: var(--navy-800); margin-bottom: 7px; }
+.field input, .field textarea, .field select {
+  width: 100%; padding: 13px 15px; border-radius: var(--radius-sm);
+  border: 1.5px solid var(--line-strong); background: var(--surface-2); transition: border .18s, box-shadow .18s, background .18s;
+}
+.field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--orange-500); background: #fff; box-shadow: var(--ring); }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.form-note { font-size: .8rem; color: var(--muted); margin-top: 14px; text-align: center; }
+.form-note svg { width: 13px; height: 13px; vertical-align: -2px; color: var(--orange-500); }
+
+/* ---------- Trust bar ---------- */
+.trustbar { background: var(--surface); border-bottom: 1px solid var(--line); }
+.trustbar-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 26px 0; }
+.stat { text-align: center; flex: 1 1 auto; }
+.stat .num { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.7rem, 3vw, 2.3rem); color: var(--navy-800); line-height: 1; letter-spacing: -.02em; }
+.stat .num .unit { color: var(--orange-500); }
+.stat .lbl { font-size: .86rem; color: var(--muted); margin-top: 8px; font-weight: 500; }
+.stat + .stat { border-left: 1px solid var(--line); }
+
+/* ---------- Cards / grids ---------- */
+.grid { display: grid; gap: 24px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  padding: 30px; transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--line-strong); }
+.card .icon {
+  width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center;
+  background: linear-gradient(150deg, var(--navy-700), var(--navy-600)); color: #fff; margin-bottom: 18px;
+}
+.card .icon svg { width: 26px; height: 26px; }
+.card.accent .icon { background: linear-gradient(150deg, var(--orange-500), var(--orange-600)); }
+.card h3 { font-size: 1.22rem; margin-bottom: 9px; }
+.card p { color: var(--muted); font-size: .97rem; }
+
+/* Situations / what we buy */
+.pill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.pill {
+  display: flex; align-items: center; gap: 14px; padding: 18px 20px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.pill:hover { border-color: var(--orange-400); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
+.pill .tick { width: 40px; height: 40px; border-radius: 11px; background: var(--orange-100); color: var(--orange-600); display: grid; place-items: center; flex-shrink: 0; }
+.pill .tick svg { width: 20px; height: 20px; }
+.pill strong { font-family: var(--font-display); font-size: 1rem; color: var(--ink); font-weight: 600; }
+.pill span { display: block; font-size: .86rem; color: var(--muted); }
+
+/* ---------- Steps ---------- */
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; counter-reset: step; position: relative; }
+.step { position: relative; }
+.step .n {
+  width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center;
+  background: #fff; border: 2px solid var(--orange-500); color: var(--orange-600);
+  font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; margin-bottom: 18px; position: relative; z-index: 2;
+}
+.step h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.step p { color: var(--muted); font-size: .97rem; }
+.steps::before {
+  content: ""; position: absolute; top: 26px; left: 10%; right: 10%; height: 2px;
+  background: repeating-linear-gradient(90deg, var(--line-strong) 0 8px, transparent 8px 16px); z-index: 1;
+}
+
+/* ---------- Split / feature ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.split-media {
+  position: relative; border-radius: var(--radius-lg); overflow: hidden; min-height: 420px;
+  background: linear-gradient(160deg, var(--navy-700), var(--navy-900)); box-shadow: var(--shadow-lg);
+}
+.split-media .arch-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+.check-list { display: grid; gap: 16px; margin-top: 8px; }
+.check-list li { display: flex; gap: 14px; align-items: flex-start; }
+.check-list .ck { width: 26px; height: 26px; border-radius: 50%; background: var(--orange-100); color: var(--orange-600); display: grid; place-items: center; flex-shrink: 0; margin-top: 2px; }
+.check-list .ck svg { width: 15px; height: 15px; }
+.check-list b { font-family: var(--font-display); color: var(--ink); display: block; font-size: 1.02rem; }
+.check-list span { color: var(--muted); font-size: .95rem; }
+
+/* Comparison table */
+.compare { display: grid; grid-template-columns: 1.2fr 1fr 1fr; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; background: #fff; }
+.compare > div { padding: 18px 22px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 10px; font-size: .96rem; }
+.compare .ch { font-family: var(--font-display); font-weight: 700; font-size: 1rem; border-bottom: 1px solid var(--line-strong); }
+.compare .ch.us { background: var(--navy-800); color: #fff; }
+.compare .ch.them { background: var(--surface-2); color: var(--muted); }
+.compare .rowlbl { font-weight: 600; color: var(--ink); font-family: var(--font-display); background: var(--surface-2); }
+.compare .cell-us { background: rgba(232,121,30,.05); font-weight: 500; color: var(--ink); }
+.compare .cell-them { color: var(--muted); }
+.compare svg { width: 18px; height: 18px; flex-shrink: 0; }
+.compare .yes { color: #1f9d5b; }
+.compare .no { color: #cf4b3a; }
+.compare > div:nth-last-child(-n+3) { border-bottom: none; }
+
+/* ---------- Testimonials ---------- */
+.quote-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 30px; box-shadow: var(--shadow-sm); }
+.stars { display: flex; gap: 3px; color: var(--orange-500); margin-bottom: 14px; }
+.stars svg { width: 18px; height: 18px; }
+.quote-card blockquote { font-size: 1.05rem; color: var(--ink); line-height: 1.6; }
+.quote-card .who { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+.quote-card .avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(150deg, var(--navy-600), var(--blue-500)); color: #fff; display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; }
+.quote-card .who b { font-family: var(--font-display); color: var(--ink); display: block; font-size: .95rem; }
+.quote-card .who span { font-size: .84rem; color: var(--muted); }
+
+/* ---------- CTA band ---------- */
+.cta-band { position: relative; overflow: hidden; background: linear-gradient(130deg, var(--navy-800), var(--navy-900)); color: #fff; border-radius: var(--radius-xl); padding: 60px; }
+.cta-band::after { content: ""; position: absolute; right: -60px; top: -60px; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(232,121,30,.35), transparent 65%); }
+.cta-band .inner { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+.cta-band h2 { color: #fff; font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.cta-band p { color: #c3cde3; margin-top: 10px; max-width: 520px; }
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 820px; margin-inline: auto; }
+.faq details { border: 1px solid var(--line); border-radius: var(--radius); background: #fff; margin-bottom: 14px; overflow: hidden; transition: border-color .2s, box-shadow .2s; }
+.faq details[open] { border-color: var(--line-strong); box-shadow: var(--shadow-sm); }
+.faq summary { list-style: none; cursor: pointer; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: var(--font-display); font-weight: 600; color: var(--ink); font-size: 1.05rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .ico { width: 28px; height: 28px; border-radius: 50%; background: var(--surface-3); display: grid; place-items: center; flex-shrink: 0; transition: transform .25s var(--ease), background .2s; }
+.faq summary .ico svg { width: 16px; height: 16px; color: var(--navy-700); }
+.faq details[open] summary .ico { transform: rotate(45deg); background: var(--orange-500); }
+.faq details[open] summary .ico svg { color: #fff; }
+.faq .answer { padding: 0 24px 22px; color: var(--muted); }
+
+/* ---------- Page hero (interior) ---------- */
+.page-hero { background: var(--navy-800); color: #eaf0fb; position: relative; overflow: hidden; }
+.page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(900px 400px at 85% -20%, rgba(74,95,165,.5), transparent 60%), radial-gradient(600px 300px at 5% 120%, rgba(232,121,30,.14), transparent 60%); }
+.page-hero .container { position: relative; z-index: 2; padding: 66px 0; }
+.page-hero h1 { color: #fff; font-size: clamp(2.1rem, 4.4vw, 3.2rem); margin: 16px 0 14px; max-width: 760px; }
+.page-hero p { color: #c3cde3; font-size: 1.12rem; max-width: 620px; }
+.crumbs { display: flex; align-items: center; gap: 8px; font-size: .86rem; color: var(--blue-300); font-family: var(--font-display); }
+.crumbs a:hover { color: #fff; }
+.crumbs svg { width: 14px; height: 14px; opacity: .7; }
+
+/* ---------- Property cards ---------- */
+.prop { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; transition: transform .25s var(--ease), box-shadow .25s; }
+.prop:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.prop .thumb { position: relative; aspect-ratio: 16 / 10; background: linear-gradient(160deg, var(--navy-600), var(--navy-900)); overflow: hidden; }
+.prop .thumb svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.prop .status { position: absolute; top: 14px; left: 14px; z-index: 2; background: var(--orange-500); color: #fff; font-family: var(--font-display); font-weight: 600; font-size: .74rem; letter-spacing: .04em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; }
+.prop .status.sold { background: var(--navy-700); }
+.prop .body { padding: 22px; }
+.prop .price { font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; color: var(--navy-800); }
+.prop .addr { color: var(--muted); font-size: .95rem; margin-top: 4px; }
+.prop .specs { display: flex; gap: 18px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--body); }
+.prop .specs span { display: inline-flex; align-items: center; gap: 6px; }
+.prop .specs svg { width: 16px; height: 16px; color: var(--blue-500); }
+
+/* ---------- Contact ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: start; }
+.info-card { display: flex; gap: 16px; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; margin-bottom: 16px; transition: border-color .2s, box-shadow .2s; }
+.info-card:hover { border-color: var(--line-strong); box-shadow: var(--shadow-sm); }
+.info-card .ic { width: 48px; height: 48px; border-radius: 12px; background: var(--surface-3); color: var(--navy-700); display: grid; place-items: center; flex-shrink: 0; }
+.info-card .ic svg { width: 22px; height: 22px; }
+.info-card h4 { font-family: var(--font-display); font-size: 1rem; color: var(--ink); margin-bottom: 3px; }
+.info-card p, .info-card a { color: var(--muted); font-size: .96rem; }
+.info-card a:hover { color: var(--orange-600); }
+.form-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 34px; box-shadow: var(--shadow-sm); }
+
+.form-success { display: none; text-align: center; padding: 20px; }
+.form-success.show { display: block; }
+.form-success .big { width: 64px; height: 64px; margin: 0 auto 16px; border-radius: 50%; background: #e7f7ee; color: #1f9d5b; display: grid; place-items: center; }
+.form-success .big svg { width: 32px; height: 32px; }
+
+/* ---------- Team ---------- */
+.team-card { text-align: center; }
+.team-card .photo { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 18px; background: linear-gradient(150deg, var(--navy-600), var(--blue-500)); color: #fff; display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; font-size: 2.2rem; box-shadow: var(--shadow); }
+.team-card h3 { font-size: 1.2rem; }
+.team-card .role { color: var(--orange-600); font-family: var(--font-display); font-weight: 600; font-size: .9rem; margin-top: 2px; }
+.team-card p { color: var(--muted); font-size: .95rem; margin-top: 12px; }
+
+/* ---------- Value list (investors) ---------- */
+.value-list { display: grid; gap: 22px; }
+.value-list li { display: flex; gap: 18px; }
+.value-list .vnum { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--orange-600); width: 40px; height: 40px; border-radius: 12px; background: var(--orange-100); display: grid; place-items: center; flex-shrink: 0; }
+.value-list b { font-family: var(--font-display); color: var(--ink); display: block; margin-bottom: 4px; font-size: 1.08rem; }
+.value-list span { color: var(--muted); }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--navy-900); color: #aab6d0; padding-top: 72px; }
+.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.footer-brand .logo { height: 42px; margin-bottom: 18px; }
+.footer-brand p { font-size: .96rem; max-width: 320px; color: #9aa6c2; }
+.footer-social { display: flex; gap: 10px; margin-top: 22px; }
+.footer-social a { width: 40px; height: 40px; border-radius: 11px; background: rgba(255,255,255,.06); display: grid; place-items: center; transition: background .2s, transform .2s; }
+.footer-social a:hover { background: var(--orange-500); transform: translateY(-2px); }
+.footer-social svg { width: 19px; height: 19px; color: #fff; }
+.footer-col h4 { color: #fff; font-family: var(--font-display); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 18px; }
+.footer-col a { display: block; padding: 6px 0; font-size: .95rem; transition: color .18s, transform .18s; }
+.footer-col a:hover { color: #fff; transform: translateX(3px); }
+.footer-contact li { display: flex; gap: 11px; padding: 6px 0; font-size: .95rem; }
+.footer-contact svg { width: 18px; height: 18px; color: var(--orange-400); flex-shrink: 0; margin-top: 3px; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 26px 0; font-size: .87rem; color: #7d89a8; }
+.footer-bottom a:hover { color: #fff; }
+.footer-legal { display: flex; gap: 22px; flex-wrap: wrap; }
+
+/* ---------- Reveal animation ---------- */
+[data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+[data-reveal].in { opacity: 1; transform: none; }
+[data-reveal][data-delay="1"] { transition-delay: .08s; }
+[data-reveal][data-delay="2"] { transition-delay: .16s; }
+[data-reveal][data-delay="3"] { transition-delay: .24s; }
+
+/* ---------- Mobile nav ---------- */
+.mobile-nav { position: fixed; inset: 0; z-index: 200; visibility: hidden; }
+.mobile-nav .scrim { position: absolute; inset: 0; background: rgba(16,24,45,.5); opacity: 0; transition: opacity .3s; }
+.mobile-nav .panel { position: absolute; top: 0; right: 0; height: 100%; width: min(360px, 86vw); background: #fff; box-shadow: var(--shadow-lg); transform: translateX(100%); transition: transform .35s var(--ease); display: flex; flex-direction: column; padding: 22px; overflow-y: auto; }
+.mobile-nav.open { visibility: visible; }
+.mobile-nav.open .scrim { opacity: 1; }
+.mobile-nav.open .panel { transform: none; }
+.mobile-nav .m-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.mobile-nav .m-head .logo { height: 38px; }
+.mobile-nav .close { width: 44px; height: 44px; border-radius: 11px; border: 1px solid var(--line); display: grid; place-items: center; }
+.mobile-nav .close svg { width: 22px; height: 22px; }
+.mobile-nav a.m-link { padding: 14px 12px; border-radius: 10px; font-family: var(--font-display); font-weight: 500; color: var(--ink); font-size: 1.05rem; border-bottom: 1px solid var(--line); }
+.mobile-nav a.m-link:hover { background: var(--surface-2); }
+.mobile-nav .m-cta { margin-top: 22px; display: grid; gap: 12px; }
+.mobile-nav .m-phone { text-align: center; margin-top: 18px; font-family: var(--font-display); font-weight: 600; color: var(--navy-800); }
+
+/* ---------- Utilities ---------- */
+.text-center { text-align: center; }
+.mt-40 { margin-top: 40px; }
+.hide-mobile { }
+.only-mobile { display: none; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 980px) {
+  .nav, .header-phone { display: none; }
+  .nav-toggle { display: flex; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; padding: 60px 0 80px; }
+  .split { grid-template-columns: 1fr; gap: 36px; }
+  .split-media { min-height: 320px; order: -1; }
+  .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .compare { grid-template-columns: 1.1fr .8fr .8fr; }
+}
+@media (max-width: 720px) {
+  body { font-size: 16px; }
+  .section { padding: 68px 0; }
+  .grid-2, .grid-3, .grid-4, .pill-grid, .steps { grid-template-columns: 1fr; }
+  .steps::before { display: none; }
+  .field-row { grid-template-columns: 1fr; }
+  .stat + .stat { border-left: none; }
+  .trustbar-inner { justify-content: center; }
+  .stat { flex: 1 1 40%; }
+  .cta-band { padding: 40px 28px; }
+  .cta-band .inner { flex-direction: column; align-items: flex-start; }
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .hero-actions .btn { width: 100%; }
+  .only-mobile { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+}
+
+</style>
+
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Helmholt HomeBuyers Inc. home">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Helmholt HomeBuyers Inc.">
+  <!-- Mark: house-shaped H -->
+  <g>
+    <path d="M8 26 L28 8 L48 26 L48 30 L44 30 L44 56 L12 56 L12 30 L8 30 Z" fill="#1d2b52"/>
+    <rect x="18" y="30" width="6" height="26" fill="#ffffff"/>
+    <rect x="32" y="30" width="6" height="26" fill="#ffffff"/>
+    <rect x="18" y="39" width="20" height="6" fill="#ffffff"/>
+    <rect x="34.5" y="14.5" width="9" height="9" rx="1.5" fill="#e8791e"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="62" y="31" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="25" font-weight="700" letter-spacing="0.5" fill="#1d2b52">HELMHOLT</text>
+  <text x="62.5" y="51" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="15.5" font-weight="400" letter-spacing="0.3" fill="#324680">HomeBuyers Inc.</text>
+</svg>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#top" class="active">Home</a>
+        <a href="#offer">Sell Your House</a>
+        <a href="#situations">Properties</a>
+        <a href="#situations">Private Investors</a>
+        <a href="#top">About</a>
+        <a href="#top">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+13145550100" class="header-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (314) 555-0100
+        </a>
+        <a href="#offer" class="btn btn--primary">Get My Cash Offer</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE NAV ============ -->
+  <div class="mobile-nav" aria-hidden="true">
+    <div class="scrim"></div>
+    <div class="panel">
+      <div class="m-head">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Helmholt HomeBuyers Inc.">
+  <!-- Mark: house-shaped H -->
+  <g>
+    <path d="M8 26 L28 8 L48 26 L48 30 L44 30 L44 56 L12 56 L12 30 L8 30 Z" fill="#1d2b52"/>
+    <rect x="18" y="30" width="6" height="26" fill="#ffffff"/>
+    <rect x="32" y="30" width="6" height="26" fill="#ffffff"/>
+    <rect x="18" y="39" width="20" height="6" fill="#ffffff"/>
+    <rect x="34.5" y="14.5" width="9" height="9" rx="1.5" fill="#e8791e"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="62" y="31" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="25" font-weight="700" letter-spacing="0.5" fill="#1d2b52">HELMHOLT</text>
+  <text x="62.5" y="51" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="15.5" font-weight="400" letter-spacing="0.3" fill="#324680">HomeBuyers Inc.</text>
+</svg>
+        <button class="close" data-close aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <a class="m-link" href="#top">Home</a>
+      <a class="m-link" href="#offer">Sell Your House</a>
+      <a class="m-link" href="#situations">Properties</a>
+      <a class="m-link" href="#situations">Private Investors</a>
+      <a class="m-link" href="#top">About</a>
+      <a class="m-link" href="#top">Contact</a>
+      <div class="m-cta">
+        <a href="#offer" class="btn btn--primary btn--block">Get My Cash Offer</a>
+        <a href="tel:+13145550100" class="btn btn--outline btn--block">Call (314) 555-0100</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <svg class="hero-skyline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c3e6b"/>
+      <stop offset="1" stop-color="#16213f"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#sky)">
+    <!-- Gateway Arch -->
+    <path d="M470 220 C470 120 560 70 640 68 C720 70 810 120 810 220 L800 220 C800 130 720 84 640 82 C560 84 480 130 480 220 Z" opacity="0.9"/>
+    <!-- skyline buildings -->
+    <rect x="40" y="150" width="60" height="70"/>
+    <rect x="110" y="120" width="40" height="100"/>
+    <rect x="160" y="140" width="70" height="80"/>
+    <rect x="240" y="100" width="46" height="120"/>
+    <rect x="295" y="130" width="60" height="90"/>
+    <rect x="365" y="90" width="40" height="130"/>
+    <rect x="412" y="120" width="52" height="100"/>
+    <rect x="640" y="110" width="44" height="110"/>
+    <rect x="694" y="140" width="64" height="80"/>
+    <rect x="820" y="100" width="50" height="120"/>
+    <rect x="878" y="130" width="60" height="90"/>
+    <rect x="946" y="80" width="44" height="140"/>
+    <rect x="998" y="120" width="70" height="100"/>
+    <rect x="1076" y="140" width="50" height="80"/>
+    <rect x="1134" y="105" width="46" height="115"/>
+    <rect x="1188" y="135" width="66" height="85"/>
+    <rect x="1262" y="115" width="42" height="105"/>
+    <rect x="1312" y="150" width="70" height="70"/>
+    <rect x="1390" y="130" width="50" height="90"/>
+  </g>
+</svg>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="hero-badge"><span class="dot"></span> Trusted St. Louis home buyers since 2009</span>
+          <h1>Sell Your House <span class="accent">Fast</span> — Any Condition, Any Situation</h1>
+          <p class="hero-sub">Helmholt HomeBuyers Inc. makes fair cash offers on homes across the St. Louis metro. Skip the repairs, showings, and agent fees — we can often close in as few as 5 days.</p>
+          <div class="hero-actions">
+            <a href="#offer" class="btn btn--primary btn--lg">Get My Free Cash Offer
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#how" class="btn btn--ghost btn--lg">How It Works</a>
+          </div>
+          <div class="hero-trust">
+            <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> No repairs or cleaning</div>
+            <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Zero agent commissions</div>
+            <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Close on your timeline</div>
+          </div>
+        </div>
+
+        <!-- Offer card -->
+        <div class="offer-card" id="offer" data-reveal>
+          <span class="offer-tag">100% Free · No Obligation</span>
+          <h3>Get your cash offer</h3>
+          <p class="lead">Tell us about your property. We'll reach out within 24 hours.</p>
+          <form data-demo-form>
+            <div class="form-fields">
+              <div class="field">
+                <label for="h-address">Property address</label>
+                <input id="h-address" name="address" type="text" placeholder="123 Main St, St. Louis, MO" required />
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="h-name">Full name</label>
+                  <input id="h-name" name="name" type="text" placeholder="Jane Doe" required />
+                </div>
+                <div class="field">
+                  <label for="h-phone">Phone</label>
+                  <input id="h-phone" name="phone" type="tel" placeholder="(314) 555-0000" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="h-email">Email</label>
+                <input id="h-email" name="email" type="email" placeholder="you@email.com" required />
+              </div>
+              <button type="submit" class="btn btn--primary btn--block btn--lg" style="margin-top:18px">Request My Offer</button>
+              <p class="form-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Your information is private and never sold.</p>
+            </div>
+            <div class="form-success">
+              <div class="big"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+              <h3>Request received!</h3>
+              <p style="color:var(--muted);margin-top:8px">Thanks — a member of the Helmholt team will contact you within one business day with your no-obligation offer.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BAR ============ -->
+  <section class="trustbar">
+    <div class="container">
+      <div class="trustbar-inner">
+        <div class="stat"><div class="num"><span data-count="2009">2009</span></div><div class="lbl">Serving St. Louis since</div></div>
+        <div class="stat"><div class="num"><span data-count="500" data-suffix="+">0</span></div><div class="lbl">Homeowners helped</div></div>
+        <div class="stat"><div class="num"><span data-count="5" data-suffix="-day">0</span></div><div class="lbl">Closings possible</div></div>
+        <div class="stat"><div class="num">$<span data-count="0" data-suffix="">0</span></div><div class="lbl">Fees or commissions</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SITUATIONS ============ -->
+  <section class="section" id="situations">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">We're here to help</span>
+        <h2>Life happens. We make selling simple.</h2>
+        <p>For more than 15 years, homeowners across the St. Louis area have turned to us when time isn't on their side. Whatever the situation, we can help.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card" data-reveal data-delay="1">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+          <h3>Facing Foreclosure</h3>
+          <p>Behind on payments or in pre-foreclosure? We may be able to take over payments and help you avoid the hit to your credit — often closing before the auction date.</p>
+        </div>
+        <div class="card" data-reveal data-delay="2">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <h3>Divorce or Life Changes</h3>
+          <p>Divorce, relocation, or a new chapter? A fast, clean sale lets everyone move forward without months of listings, showings, and uncertainty.</p>
+        </div>
+        <div class="card" data-reveal data-delay="3">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5M17 3l3 4-3 4M7 21l-3-4 3-4"/></svg></div>
+          <h3>Inherited or Estate Sale</h3>
+          <p>Managing an inherited property from out of town? We handle estate sales with care and can purchase as-is, so you don't have to lift a finger.</p>
+        </div>
+        <div class="card accent" data-reveal data-delay="1">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V7l6-4 6 4v14M10 9h.01M14 9h.01M10 13h.01M14 13h.01"/></svg></div>
+          <h3>Problem Tenants</h3>
+          <p>Tired of being a landlord? We buy rental properties with tenants in place — no need to chase rent or handle a difficult eviction first.</p>
+        </div>
+        <div class="card" data-reveal data-delay="2">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+          <h3>Bankruptcy &amp; Short Sales</h3>
+          <p>Working through bankruptcy or a short sale? We're experienced with lenders and attorneys and can move quickly to keep your case on track.</p>
+        </div>
+        <div class="card" data-reveal data-delay="3">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Any Condition, As-Is</h3>
+          <p>Fire damage, deferred maintenance, or a full renovation project? Don't spend a dime fixing it up — we buy houses exactly as they are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section--alt" id="how">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Simple &amp; transparent</span>
+        <h2>How it works — three easy steps</h2>
+        <p>No obligations, no pressure, no hidden fees. Just a straightforward path to a fast, fair sale.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal data-delay="1">
+          <div class="n">1</div>
+          <h3>Tell us about your home</h3>
+          <p>Share a few details by phone or through our quick online form. It takes just a couple of minutes and there's no obligation.</p>
+        </div>
+        <div class="step" data-reveal data-delay="2">
+          <div class="n">2</div>
+          <h3>Get a fair cash offer</h3>
+          <p>We review your property and present a no-obligation, no-hassle offer — typically within 24 hours. You're never pressured to accept.</p>
+        </div>
+        <div class="step" data-reveal data-delay="3">
+          <div class="n">3</div>
+          <h3>Close &amp; get paid</h3>
+          <p>Pick a closing date that works for you. We handle the paperwork and cover the details — you can have cash in hand in as few as 5 days.</p>
+        </div>
+      </div>
+      <div class="text-center mt-40" data-reveal>
+        <a href="#offer" class="btn btn--primary btn--lg">Start With a Free Offer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US / COMPARISON ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div data-reveal>
+          <span class="eyebrow">The Helmholt difference</span>
+          <h2 style="font-size:clamp(1.9rem,3.4vw,2.7rem);margin:14px 0 18px">Why homeowners choose to sell to us</h2>
+          <p style="color:var(--muted);margin-bottom:26px">Selling the traditional way means repairs, showings, agent commissions, and months of waiting — with no guarantee of a closing. We offer a simpler path built around your timeline.</p>
+          <ul class="check-list">
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>No repairs or renovations</b><span>Sell exactly as-is. We handle everything after closing.</span></div></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>No fees or commissions</b><span>Keep more of your equity — no agent commissions or closing-cost surprises.</span></div></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>You choose the closing date</b><span>Need to close in 5 days or 5 weeks? The timeline is yours.</span></div></li>
+            <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Local experts you can trust</b><span>A family-owned St. Louis business with deep roots in the community since 2009.</span></div></li>
+          </ul>
+        </div>
+        <div data-reveal data-delay="1">
+          <div class="compare">
+            <div class="ch">&nbsp;</div>
+            <div class="ch us">Selling to Helmholt</div>
+            <div class="ch them">Traditional sale</div>
+
+            <div class="rowlbl">Timeline to close</div>
+            <div class="cell-us">As few as 5 days</div>
+            <div class="cell-them">60–90+ days</div>
+
+            <div class="rowlbl">Repairs needed</div>
+            <div class="cell-us"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> None</div>
+            <div class="cell-them"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg> Often required</div>
+
+            <div class="rowlbl">Agent commissions</div>
+            <div class="cell-us"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> $0</div>
+            <div class="cell-them"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg> 5–6%</div>
+
+            <div class="rowlbl">Showings &amp; open houses</div>
+            <div class="cell-us"><svg class="yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> None</div>
+            <div class="cell-them"><svg class="no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg> Many</div>
+
+            <div class="rowlbl">Closing certainty</div>
+            <div class="cell-us">Guaranteed offer</div>
+            <div class="cell-them">Financing may fall through</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT WE BUY ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Our specialties</span>
+        <h2>The properties we specialize in</h2>
+        <p>Helmholt HomeBuyers is well-regarded as a premier authority for these transactions throughout the St. Louis metropolitan area and surrounding counties.</p>
+      </div>
+      <div class="pill-grid">
+        <div class="pill" data-reveal><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Pre-Foreclosures</strong><span>Stop the clock before auction</span></div></div>
+        <div class="pill" data-reveal data-delay="1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Short Sales</strong><span>We work directly with lenders</span></div></div>
+        <div class="pill" data-reveal data-delay="2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Bankruptcies</strong><span>Experienced with attorneys</span></div></div>
+        <div class="pill" data-reveal><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Rental Properties</strong><span>Tenants in place? No problem</span></div></div>
+        <div class="pill" data-reveal data-delay="1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Estate Sales</strong><span>Compassionate, hands-off process</span></div></div>
+        <div class="pill" data-reveal data-delay="2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Distressed Homes</strong><span>Any condition considered</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Real stories</span>
+        <h2>Homeowners we've helped</h2>
+        <p>We measure success by the peace of mind we bring to families across the St. Louis area.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="quote-card" data-reveal data-delay="1">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <blockquote>"We were weeks away from foreclosure and out of options. Jason and his team stepped in, made a fair offer, and closed before the deadline. They truly saved us."</blockquote>
+          <div class="who"><span class="avatar">M&amp;R</span><div><b>Michael &amp; Rebecca T.</b><span>Florissant, MO</span></div></div>
+        </div>
+        <div class="quote-card" data-reveal data-delay="2">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <blockquote>"I inherited my mother's house and live three states away. Helmholt handled everything remotely and bought it as-is. I never had to fly back. Incredible service."</blockquote>
+          <div class="who"><span class="avatar">DK</span><div><b>Diane K.</b><span>St. Charles County</span></div></div>
+        </div>
+        <div class="quote-card" data-reveal data-delay="3">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <blockquote>"After years of dealing with a problem tenant, I just wanted out. They bought the property with the tenant still in it and I closed in under two weeks. Huge relief."</blockquote>
+          <div class="who"><span class="avatar">JP</span><div><b>James P.</b><span>South City, St. Louis</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA ============ -->
+  <section class="section section--navy">
+    <div class="container">
+      <div class="split">
+        <div class="split-media" data-reveal>
+          <svg class="arch-art" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="a1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#324680"/><stop offset="1" stop-color="#16213f"/></linearGradient>
+            </defs>
+            <rect width="500" height="500" fill="url(#a1)"/>
+            <path d="M120 420 C120 200 260 120 380 118 C500 120 620 200 620 420" fill="none" stroke="#e8791e" stroke-width="14" opacity="0.85" transform="translate(-120,0)"/>
+            <path d="M150 420 C150 230 250 160 340 158 C430 160 520 230 520 420" fill="none" stroke="#8fa0d6" stroke-width="7" opacity="0.5" transform="translate(-80,10)"/>
+            <g fill="#1d2b52" opacity="0.9">
+              <rect x="40" y="330" width="60" height="120"/>
+              <rect x="110" y="290" width="44" height="160"/>
+              <rect x="360" y="300" width="50" height="150"/>
+              <rect x="420" y="340" width="60" height="110"/>
+            </g>
+            <rect x="0" y="440" width="500" height="60" fill="#16213f"/>
+          </svg>
+        </div>
+        <div data-reveal data-delay="1">
+          <span class="eyebrow">Proudly local</span>
+          <h2 style="font-size:clamp(1.9rem,3.4vw,2.7rem);margin:14px 0 18px">Serving the entire St. Louis metro &amp; surrounding counties</h2>
+          <p style="color:#c3cde3;margin-bottom:22px">From the city to the suburbs, we buy houses throughout the region. If you're anywhere in the St. Louis area, we'd love to make you an offer.</p>
+          <div class="grid grid-2" style="gap:10px 24px">
+            <div style="display:flex;gap:10px;align-items:center;color:#dfe6f4"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f28f3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> St. Louis City</div>
+            <div style="display:flex;gap:10px;align-items:center;color:#dfe6f4"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f28f3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> St. Louis County</div>
+            <div style="display:flex;gap:10px;align-items:center;color:#dfe6f4"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f28f3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> St. Charles County</div>
+            <div style="display:flex;gap:10px;align-items:center;color:#dfe6f4"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f28f3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Jefferson County</div>
+            <div style="display:flex;gap:10px;align-items:center;color:#dfe6f4"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f28f3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Franklin County</div>
+            <div style="display:flex;gap:10px;align-items:center;color:#dfe6f4"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#f28f3b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Metro East, IL</div>
+          </div>
+          <a href="#top" class="btn btn--primary" style="margin-top:28px">See If We Buy in Your Area</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Good to know</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details open>
+          <summary>How quickly can you close? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="answer">Depending on your situation, we can often close in as few as 5 days. Because we buy with cash, there's no waiting on bank financing. If you need more time, we'll close on whatever date works best for you.</div>
+        </details>
+        <details>
+          <summary>Do I need to make repairs or clean up? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="answer">Not at all. We buy houses completely as-is. Leave behind anything you don't want, skip the repairs, and don't worry about cleaning — we take care of everything after closing.</div>
+        </details>
+        <details>
+          <summary>Are there any fees or commissions? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="answer">No. Unlike a traditional listing, there are no agent commissions and no hidden fees. The offer we make is the amount you receive at closing, with no surprises.</div>
+        </details>
+        <details>
+          <summary>Is my offer really no-obligation? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="answer">Absolutely. Requesting an offer is completely free with zero obligation. Take your time to review it, ask questions, and decide what's right for you and your family. There's never any pressure.</div>
+        </details>
+        <details>
+          <summary>Can you help if I'm behind on payments or in foreclosure? <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="answer">Yes — this is one of our specialties. Depending on the circumstances, we may be able to take over your payments and help you avoid foreclosure. The sooner you reach out, the more options we'll have to help.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <div class="inner">
+          <div>
+            <h2>Ready to sell your house the easy way?</h2>
+            <p>Get a fair, no-obligation cash offer today. It only takes a couple of minutes to get started.</p>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#offer" class="btn btn--primary btn--lg">Get My Cash Offer</a>
+            <a href="tel:+13145550100" class="btn btn--ghost btn--lg">Call (314) 555-0100</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Helmholt HomeBuyers Inc.">
+  <g>
+    <path d="M8 26 L28 8 L48 26 L48 30 L44 30 L44 56 L12 56 L12 30 L8 30 Z" fill="#ffffff"/>
+    <rect x="18" y="30" width="6" height="26" fill="#1d2b52"/>
+    <rect x="32" y="30" width="6" height="26" fill="#1d2b52"/>
+    <rect x="18" y="39" width="20" height="6" fill="#1d2b52"/>
+    <rect x="34.5" y="14.5" width="9" height="9" rx="1.5" fill="#e8791e"/>
+  </g>
+  <text x="62" y="31" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="25" font-weight="700" letter-spacing="0.5" fill="#ffffff">HELMHOLT</text>
+  <text x="62.5" y="51" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="15.5" font-weight="400" letter-spacing="0.3" fill="#8fa0d6">HomeBuyers Inc.</text>
+</svg>
+          <p>The go-to resource to quickly resolve any and all of your real estate needs. Family-owned and serving the St. Louis metropolitan area since 2009.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.21V21H9z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#top">About Us</a>
+          <a href="#how">How It Works</a>
+          <a href="#situations">Private Investors</a>
+          <a href="#top">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#offer">Sell Your House</a>
+          <a href="#situations">Properties</a>
+          <a href="#offer">Pre-Foreclosures</a>
+          <a href="#offer">Estate Sales</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+13145550100">(314) 555-0100</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg> <a href="mailto:info@helmholthomebuyers.com">info@helmholthomebuyers.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> St. Louis Metropolitan Area, MO</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© <span id="year">2026</span> Helmholt HomeBuyers Inc. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#top">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+/* Helmholt HomeBuyers Inc. — site interactions */
+(function () {
+  "use strict";
+
+  /* ---- Sticky header shadow on scroll ---- */
+  var header = document.querySelector(".site-header");
+  function onScroll() {
+    if (!header) return;
+    header.classList.toggle("scrolled", window.scrollY > 8);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ---- Mobile navigation ---- */
+  var toggle = document.querySelector(".nav-toggle");
+  var mnav = document.querySelector(".mobile-nav");
+  function closeNav() { if (mnav) { mnav.classList.remove("open"); document.body.style.overflow = ""; } }
+  function openNav() { if (mnav) { mnav.classList.add("open"); document.body.style.overflow = "hidden"; } }
+  if (toggle) toggle.addEventListener("click", openNav);
+  if (mnav) {
+    mnav.addEventListener("click", function (e) {
+      if (e.target.closest("[data-close]") || e.target.classList.contains("scrim")) closeNav();
+    });
+  }
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeNav(); });
+
+  /* ---- Reveal on scroll ---- */
+  var reveals = document.querySelectorAll("[data-reveal]");
+  if ("IntersectionObserver" in window && reveals.length) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* ---- Animated counters ---- */
+  var counters = document.querySelectorAll("[data-count]");
+  function animateCount(el) {
+    var target = parseFloat(el.getAttribute("data-count"));
+    var suffix = el.getAttribute("data-suffix") || "";
+    var decimals = (target % 1 !== 0) ? 1 : 0;
+    var dur = 1600, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * eased).toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = target.toFixed(decimals) + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  if ("IntersectionObserver" in window && counters.length) {
+    var co = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { animateCount(entry.target); co.unobserve(entry.target); }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { co.observe(el); });
+  }
+
+  /* ---- Contact / offer form (demo submit) ---- */
+  document.querySelectorAll("form[data-demo-form]").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var success = form.querySelector(".form-success");
+      var fields = form.querySelector(".form-fields");
+      if (success && fields) {
+        fields.style.display = "none";
+        success.classList.add("show");
+        success.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        var btn = form.querySelector('button[type="submit"]');
+        if (btn) { btn.textContent = "Thank you — we'll be in touch!"; btn.disabled = true; }
+      }
+    });
+  });
+
+  /* ---- Footer year ---- */
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+})();
+
+</script>
+
+</body>
+</html>
