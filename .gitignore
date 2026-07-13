@@ -1,0 +1,14 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Node (not used yet, but safe to ignore)
+node_modules/
+
+# Generated single-file preview (published as a Claude artifact; not part of the deployed site)
+preview.html
+
+# Temp
+_deploy.json
+.vercel/

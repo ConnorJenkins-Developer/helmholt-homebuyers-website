@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c3e6b"/>
+      <stop offset="1" stop-color="#16213f"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#sky)">
+    <!-- Gateway Arch -->
+    <path d="M470 220 C470 120 560 70 640 68 C720 70 810 120 810 220 L800 220 C800 130 720 84 640 82 C560 84 480 130 480 220 Z" opacity="0.9"/>
+    <!-- skyline buildings -->
+    <rect x="40" y="150" width="60" height="70"/>
+    <rect x="110" y="120" width="40" height="100"/>
+    <rect x="160" y="140" width="70" height="80"/>
+    <rect x="240" y="100" width="46" height="120"/>
+    <rect x="295" y="130" width="60" height="90"/>
+    <rect x="365" y="90" width="40" height="130"/>
+    <rect x="412" y="120" width="52" height="100"/>
+    <rect x="640" y="110" width="44" height="110"/>
+    <rect x="694" y="140" width="64" height="80"/>
+    <rect x="820" y="100" width="50" height="120"/>
+    <rect x="878" y="130" width="60" height="90"/>
+    <rect x="946" y="80" width="44" height="140"/>
+    <rect x="998" y="120" width="70" height="100"/>
+    <rect x="1076" y="140" width="50" height="80"/>
+    <rect x="1134" y="105" width="46" height="115"/>
+    <rect x="1188" y="135" width="66" height="85"/>
+    <rect x="1262" y="115" width="42" height="105"/>
+    <rect x="1312" y="150" width="70" height="70"/>
+    <rect x="1390" y="130" width="50" height="90"/>
+  </g>
+</svg>

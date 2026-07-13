@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" role="img" aria-label="Helmholt HomeBuyers Inc.">
+  <g>
+    <path d="M8 26 L28 8 L48 26 L48 30 L44 30 L44 56 L12 56 L12 30 L8 30 Z" fill="#ffffff"/>
+    <rect x="18" y="30" width="6" height="26" fill="#1d2b52"/>
+    <rect x="32" y="30" width="6" height="26" fill="#1d2b52"/>
+    <rect x="18" y="39" width="20" height="6" fill="#1d2b52"/>
+    <rect x="34.5" y="14.5" width="9" height="9" rx="1.5" fill="#e8791e"/>
+  </g>
+  <text x="62" y="31" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="25" font-weight="700" letter-spacing="0.5" fill="#ffffff">HELMHOLT</text>
+  <text x="62.5" y="51" font-family="Sora, 'Plus Jakarta Sans', sans-serif" font-size="15.5" font-weight="400" letter-spacing="0.3" fill="#8fa0d6">HomeBuyers Inc.</text>
+</svg>
